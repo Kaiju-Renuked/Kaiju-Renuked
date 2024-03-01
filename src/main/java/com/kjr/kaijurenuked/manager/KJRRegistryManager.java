@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 
 public final class KJRRegistryManager {
 
-    protected static void registerRegistries(IEventBus modBus) {
+    static void registerRegistries(IEventBus modBus) {
         KJRTags.initialize();
 
         KJRCreativeModeTabs.CREATIVE_MODE_TABS.register(modBus);

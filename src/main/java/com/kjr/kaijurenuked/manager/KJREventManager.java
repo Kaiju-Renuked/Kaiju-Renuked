@@ -9,7 +9,7 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 
 public final class KJREventManager {
 
-    protected static void registerEvents(IEventBus modBus, IEventBus forgeBus) {
+    static void registerEvents(IEventBus modBus, IEventBus forgeBus) {
         registerClientEvents(modBus, forgeBus);
         registerCommonEvents(modBus, forgeBus);
         registerServerEvents(modBus, forgeBus);
@@ -25,6 +25,7 @@ public final class KJREventManager {
 
     private static void registerCommonEvents(IEventBus modBus, IEventBus forgeBus) {
         modBus.register(KJRCommonSetupEvents.ModSetupEvents.class);
+        modBus.addListener(KJRNetworkManager::registerPackets);
 
         forgeBus.register(KJRCommonSetupEvents.ForgeSetupEvents.class);
         forgeBus.register(KJRCommonMiscEvents.class);

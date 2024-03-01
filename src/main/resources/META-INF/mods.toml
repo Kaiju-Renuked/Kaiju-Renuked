@@ -1,0 +1,88 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="${mod_issue_tracker_url}$"
+
+[[mods]]
+modId="${modid}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="kaijurenuked_logo.png"
+logoBlur=false
+# itemIcon=""
+credits="${mod_credits}"
+authors="${mod_authors}"
+description='''${mod_description}'''
+
+[modproperties."${modid}"]
+#    catalogueItemIcon = ""
+    catalogueImageIcon="kaijurenuked_logo.png"
+#    catalogueBackground=""
+    configuredBackground="minecraft:textures/block/netherite_block.png"
+
+# Base
+[[dependencies."${modid}"]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."${modid}"]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${mc_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# Dependencies (Required)
+
+# Dependencies (Optional)
+[[dependencies."${modid}"]]
+    modId="jei"
+    mandatory=false
+    versionRange="${jei_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."${modid}"]]
+    modId="jeed"
+    mandatory=false
+    versionRange="${jeed_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."${modid}"]]
+    modId="jade"
+    mandatory=false
+    versionRange="${jade_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."${modid}"]]
+    modId="appleskin"
+    mandatory=false
+    versionRange="${appleskin_version_range}"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies."${modid}"]]
+    modId="forgeconfigscreens"
+    mandatory=false
+    versionRange="${fcs_version_range}"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies."${modid}"]]
+    modId="catalogue"
+    mandatory=false
+    versionRange="${catalogue_version_range}"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies."${modid}"]]
+    modId="gamemenumodoption"
+    mandatory=false
+    versionRange="${gmmo_version_range}"
+    ordering="NONE"
+    side="CLIENT"
